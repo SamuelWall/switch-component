@@ -1,0 +1,100 @@
+{
+  "displayName": "Switch Component",
+  "defaultWidth": 160,
+  "defaultHeight": 24,
+  "components": "./index.js",
+  "props": [
+    {
+      "name": "defaultValue",
+      "displayName": "Default Value",
+      "type": "boolean",
+      "default": false
+    },
+    {
+      "name": "trackColorActive",
+      "displayName": "Track Color: On",
+      "type": "color",
+      "default": "#30a566"
+    },
+    {
+      "name": "trackColorInactive",
+      "displayName": "Track Color: Off",
+      "type": "color",
+      "default": "#bbbbbb"
+    },
+    {
+      "name": "circleColorActive",
+      "displayName": "Circle Color: On",
+      "type": "color",
+      "default": "green"
+    },
+    {
+      "name": "circleColorInactive",
+      "displayName": "Circle Color: Off",
+      "type": "color",
+      "default": "#dddddd"
+    },
+    {
+      "name": "circleSize",
+      "displayName": "Circle Size",
+      "type": "number",
+      "default": 40,
+      "control": { "type": "slider", "max": 15, "min": 50 }
+    },
+    {
+      "name": "barHeight",
+      "displayName": "Bar Height",
+      "type": "number",
+      "default": 30,
+      "control": { "type": "slider", "max": 15, "min": 50 }
+    },
+    {
+      "name": "switchMultiplyer",
+      "displayName": "Bar Length (relative)",
+      "type": "number",
+      "default": 2
+    },
+    {
+      "name": "circleBorderColor",
+      "displayName": "Circle's Border Color",
+      "type": "color",
+      "default": "#000000"
+    },
+    {
+      "name": "circleBorderWidth",
+      "displayName": "Circle Border Width",
+      "type": "number",
+      "default": 2,
+      "control": { "type": "slider", "max": 0, "min": 15 }
+    },
+    {
+      "name": "borderRadius",
+      "displayName": "Roundedness",
+      "type": "number",
+      "default": 30
+    },
+    {
+      "name": "activeText",
+      "displayName": "Switch Text: On",
+      "type": "text",
+      "default": "On"
+    },
+    {
+      "name": "inactiveText",
+      "displayName": "Switch Text: Off",
+      "type": "text",
+      "default": "Off"
+    },
+    {
+      "name": "toggleAction",
+      "displayName": "Action on Switch Toggle",
+      "type": "action",
+      "arguments": [
+        {
+          "type": "boolean",
+          "displayName": "Switch Value"
+        }
+      ]
+    }
+  ]
+}

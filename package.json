@@ -1,0 +1,39 @@
+{
+  "name": "switch-component",
+  "description": "Adalo Switch Component",
+  "author": "Samuel Wolnerman, Ben Gilman",
+  "version": "1.0.0",
+  "displayName": "Native Switch Component",
+  "license": "MIT",
+  "main": "index.js",
+  "scripts": {
+    "start": "adalo dev",
+    "build": "adalo build",
+    "login": "adalo login"
+  },
+  "peerDependencies": {
+    "react": ">=16",
+    "react-dom": ">=16",
+    "react-native": "*"
+  },
+  "adalo": {
+    "displayName": "Switch Component",
+    "components": [
+      {
+        "name": "SwitchComponent",
+        "manifest": "./src/components/SwitchComponent/manifest.json"
+      }
+    ],
+    "logo": "./logo.png"
+  },
+  "devDependencies": {
+    "@adalo/cli": "0.0.38",
+    "react": "^16.13.1",
+    "react-art": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-native-web": "^0.9.13"
+  },
+  "dependencies": {
+    "react-native-switch": "^2.0.0"
+  }
+}
