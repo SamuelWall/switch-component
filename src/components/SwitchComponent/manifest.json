@@ -6,9 +6,9 @@
   "props": [
     {
       "name": "defaultValue",
-      "displayName": "Default Value",
+      "displayName": "What does this turn On/Off?",
       "type": "boolean",
-      "default": false
+      "role": "autosaveInput"
     },
     {
       "name": "trackColorActive",

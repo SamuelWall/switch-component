@@ -3,7 +3,7 @@
   "description": "Adalo Switch Component",
   "author": "Samuel Wolnerman, Ben Gilman",
   "version": "1.0.0",
-  "displayName": "Native Switch Component",
+  "displayName": "Switch",
   "license": "MIT",
   "main": "index.js",
   "scripts": {

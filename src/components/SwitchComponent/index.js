@@ -16,7 +16,7 @@ class SwitchComponent extends Component{
 			    value={this.state.currentVal}
 			    onValueChange={this.flipSwitch}
 			    activeText={this.props.activeText}
-			    inActiveText={this.props.inActiveText}
+			    inActiveText={this.props.inactiveText}
 			    circleSize={this.props.circleSize}
 			    barHeight={this.props.barHeight}
 			    circleBorderWidth={this.props.circleBorderWidth}
@@ -34,7 +34,6 @@ class SwitchComponent extends Component{
 			    switchWidthMultiplier={this.props.switchWidthMultiplier} // multipled by the `circleSize` prop to calculate total width of the Switch
 			    switchBorderRadius={this.props.borderRadius} // Sets the border Radius of the switch slider. If unset, it remains the circleSize.
   			  />
-
 		)
 	}
 }
