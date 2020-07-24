@@ -39,14 +39,14 @@
       "displayName": "Circle Size",
       "type": "number",
       "default": 40,
-      "control": { "type": "slider", "max": 15, "min": 50 }
+      "control": { "type": "slider", "max": 50, "min": 15 }
     },
     {
       "name": "barHeight",
       "displayName": "Bar Height",
       "type": "number",
       "default": 30,
-      "control": { "type": "slider", "max": 15, "min": 50 }
+      "control": { "type": "slider", "max": 50, "min": 15 }
     },
     {
       "name": "switchMultiplyer",
