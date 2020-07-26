@@ -7,8 +7,15 @@ class SwitchComponent extends Component{
 	flipSwitch = () => {
 		const newVal = !this.state.currentVal;
 		this.setState({currentVal: newVal})
-		const {toggleAction} = this.props;
-		if(toggleAction) toggleAction(newVal)
+		if(newVal){
+			const {toggleActionOn} = this.props;
+			if(toggleActionOn) toggleActionOn(newVal)
+		}
+		else{
+			const {toggleActionOff} = this.props;
+			if(toggleActionOff) toggleActionOff(newVal)
+		}
+
 	}
 	render = () => {
 		return (

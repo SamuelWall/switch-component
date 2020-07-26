@@ -1,8 +1,8 @@
 {
   "name": "switch-component",
-  "description": "Adalo Switch Component",
+  "description": "Toggle true/false properties on and off.  Switch style is fully customizable.",
   "author": "Samuel Wolnerman, Ben Gilman",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "displayName": "Switch",
   "license": "MIT",
   "main": "index.js",
@@ -17,7 +17,7 @@
     "react-native": "*"
   },
   "adalo": {
-    "displayName": "Switch Component",
+    "displayName": "Switch",
     "components": [
       {
         "name": "SwitchComponent",
