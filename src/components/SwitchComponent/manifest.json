@@ -52,64 +52,80 @@
       "type": "number",
       "default": 30,
       "control": { "type": "slider", "max": 50, "min": 15 }
-    },
-    {
-      "name": "trackColorActive",
-      "displayName": "Enabled Track Color",
-      "type": "color",
-      "default": "@primaryLight"
-    },
-    {
-      "name": "circleColorActive",
-      "displayName": "Enabled Circle Color",
-      "type": "color",
-      "default": "@primary"
-    },
-    {
-      "name": "activeText",
-      "displayName": "Enabled Switch Text",
-      "type": "text",
-      "default": ""
-    },
-    {
-      "name": "toggleActionOn",
-      "displayName": "Actions when Switch is changed to ON",
-      "type": "action",
-      "arguments": [
-        {
-          "type": "boolean",
-          "displayName": "Switch Value"
-        }
-      ]
-    },
-    {
-      "name": "trackColorInactive",
-      "displayName": "Disabled Track Color",
-      "type": "color",
-      "default": "#e0e0e0"
-    },
-    {
-      "name": "circleColorInactive",
-      "displayName": "Disabled Circle Color",
-      "type": "color",
-      "default": "#9e9e9e"
-    },
-    {
-      "name": "inactiveText",
-      "displayName": "Disabled Switch Text",
-      "type": "text",
-      "default": ""
-    },
-    {
-      "name": "toggleActionOff",
-      "displayName": "Actions when Switch is changed to OFF",
-      "type": "action",
-      "arguments": [
-        {
-          "type": "boolean",
-          "displayName": "Switch Value"
-        }
-      ]
     }
-  ]
+  ],
+  "childComponents": [
+      {
+        "name": "on",
+        "displayName": "On",
+        "actions": true,
+        "props": [
+          {
+            "name": "trackColorActive",
+            "displayName": "Enabled Track Color",
+            "type": "color",
+            "default": "@primaryLight"
+          },
+          {
+            "name": "circleColorActive",
+            "displayName": "Enabled Circle Color",
+            "type": "color",
+            "default": "@primary"
+          },
+          {
+            "name": "activeText",
+            "displayName": "Enabled Switch Text",
+            "type": "text",
+            "default": ""
+          },
+          {
+            "name": "toggleActionOn",
+            "displayName": "Actions when Switch is changed to ON",
+            "type": "action",
+            "arguments": [
+              {
+                "type": "boolean",
+                "displayName": "Switch Value"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "off",
+        "displayName": "Off",
+        "actions": true,
+        "props": [
+          {
+            "name": "trackColorInactive",
+            "displayName": "Disabled Track Color",
+            "type": "color",
+            "default": "#e0e0e0"
+          },
+          {
+            "name": "circleColorInactive",
+            "displayName": "Disabled Circle Color",
+            "type": "color",
+            "default": "#9e9e9e"
+          },
+          {
+            "name": "inactiveText",
+            "displayName": "Disabled Switch Text",
+            "type": "text",
+            "default": ""
+          },
+          {
+            "name": "toggleActionOff",
+            "displayName": "Actions when Switch is changed to OFF",
+            "type": "action",
+            "arguments": [
+              {
+                "type": "boolean",
+                "displayName": "Switch Value"
+              }
+            ]
+          }
+        ]
+      }
+    ]
 }
