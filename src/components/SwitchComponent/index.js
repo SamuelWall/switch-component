@@ -8,11 +8,11 @@ class SwitchComponent extends Component{
 		const newVal = !this.state.currentVal;
 		this.setState({currentVal: newVal})
 		if(newVal){
-			const {toggleActionOn} = this.props;
+			const {toggleActionOn} = this.props.on;
 			if(toggleActionOn) toggleActionOn(newVal)
 		}
 		else{
-			const {toggleActionOff} = this.props;
+			const {toggleActionOff} = this.props.off;
 			if(toggleActionOff) toggleActionOff(newVal)
 		}
 
@@ -22,15 +22,15 @@ class SwitchComponent extends Component{
 				<Switch
 			    value={this.state.currentVal}
 			    onValueChange={this.flipSwitch}
-			    activeText={this.props.activeText}
-			    inActiveText={this.props.inactiveText}
+			    activeText={this.props.on.activeText}
+			    inActiveText={this.props.off.inactiveText}
 			    circleSize={this.props.circleSize}
-			    barHeight={this.props.barHeight}
+			    barHeight={this.props._height}
 			    circleBorderWidth={this.props.circleBorderWidth}
-			    backgroundActive={this.props.trackColorActive}
-			    backgroundInactive={this.props.trackColorInactive}
-			    circleActiveColor={this.props.circleColorActive}
-			    circleInActiveColor={this.props.circleColorInactive}
+			    backgroundActive={this.props.on.trackColorActive}
+			    backgroundInactive={this.props.off.trackColorInactive}
+			    circleActiveColor={this.props.on.circleColorActive}
+			    circleInActiveColor={this.props.off.circleColorInactive}
 			    changeValueImmediately={true}
 			    innerCircleStyle={{ alignItems: "center", justifyContent: "center" }} // style for inner animated circle for what you (may) be rendering inside the circle
 			    outerCircleStyle={{'color': this.props.circleBorderColor}} // style for outer animated circle
