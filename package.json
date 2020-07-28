@@ -21,10 +21,11 @@
     "components": [
       {
         "name": "SwitchComponent",
-        "icon": "./src/components/SwitchComponent/manifest.json"
+        "manifest": "./src/components/SwitchComponent/manifest.json"
       }
     ],
-    "logo": "./logo.png"
+    "logo": "./logo.png",
+    "icon": "./thumbnail.png"
   },
   "devDependencies": {
     "@adalo/cli": "0.0.38",
