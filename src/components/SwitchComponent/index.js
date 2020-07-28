@@ -3,9 +3,12 @@ import { Text, View, StyleSheet } from 'react-native'
 import { Switch } from 'react-native-switch';
 
 class SwitchComponent extends Component{
-	state = {currentVal: this.props.defaultValue}
+	state = {currentVal: this.props.defaultValue.value}
 	flipSwitch = () => {
+
 		const newVal = !this.state.currentVal;
+		const {onChange}=this.props.defaultValue
+		if(onChange) onChange(newVal)
 		this.setState({currentVal: newVal})
 		if(newVal){
 			const {toggleActionOn} = this.props.on;
@@ -15,12 +18,17 @@ class SwitchComponent extends Component{
 			const {toggleActionOff} = this.props.off;
 			if(toggleActionOff) toggleActionOff(newVal)
 		}
-
 	}
+
 	render = () => {
+		console.log(this.props.defaultValue)
+		let val = this.state.currentVal
+		if(val == undefined)
+			val = true;
+
 		return (
 				<Switch
-			    value={this.state.currentVal}
+			    value={val}
 			    onValueChange={this.flipSwitch}
 			    activeText={this.props.on.activeText}
 			    inActiveText={this.props.off.inactiveText}
@@ -36,9 +44,9 @@ class SwitchComponent extends Component{
 			    outerCircleStyle={{'color': this.props.circleBorderColor}} // style for outer animated circle
 			    renderActiveText={true}
 			    renderInActiveText={true}
-			    switchLeftPx={2} // denominator for logic when sliding to TRUE position. Higher number = more space from RIGHT of the circle to END of the slider
-			    switchRightPx={2} // denominator for logic when sliding to FALSE position. Higher number = more space from LEFT of the circle to BEGINNING of the slider
-			    switchWidthMultiplier={this.props.switchWidthMultiplier} // multipled by the `circleSize` prop to calculate total width of the Switch
+			    switchLeftPx={2*(this.props.circleSize/this.props._width)} // denominator for logic when sliding to TRUE position. Higher number = more space from RIGHT of the circle to END of the slider
+			    switchRightPx={2*(this.props.circleSize/this.props._width)} // denominator for logic when sliding to FALSE position. Higher number = more space from LEFT of the circle to BEGINNING of the slider
+			    switchWidthMultiplier={this.props._width/this.props.circleSize} // multipled by the `circleSize` prop to calculate total width of the Switch
 			    switchBorderRadius={this.props.borderRadius} // Sets the border Radius of the switch slider. If unset, it remains the circleSize.
   			  />
 		)

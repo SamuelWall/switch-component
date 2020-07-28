@@ -21,7 +21,7 @@
     "components": [
       {
         "name": "SwitchComponent",
-        "manifest": "./src/components/SwitchComponent/manifest.json"
+        "icon": "./src/components/SwitchComponent/manifest.json"
       }
     ],
     "logo": "./logo.png"

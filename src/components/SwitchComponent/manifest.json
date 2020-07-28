@@ -1,7 +1,7 @@
 {
   "displayName": "Switch",
-  "defaultWidth": 160,
-  "defaultHeight": 24,
+  "defaultWidth": 20,
+  "defaultHeight": 15,
   "components": "./index.js",
   "resizeY": true,
   "props": [
@@ -15,8 +15,8 @@
       "name": "circleSize",
       "displayName": "Circle Size",
       "type": "number",
-      "default": 40,
-      "control": { "type": "slider", "max": 50, "min": 15 }
+      "default": 20,
+      "control": { "type": "slider", "max": 50, "min": 0 }
     },
     {
       "name": "circleBorderColor",
@@ -28,14 +28,14 @@
       "name": "circleBorderWidth",
       "displayName": "Circle Border Width",
       "type": "number",
-      "default": 2,
+      "default": 0,
       "control": { "type": "slider", "max": 15, "min": 0 }
     },
     {
       "name": "switchMultiplyer",
       "displayName": "Bar Length",
       "type": "number",
-      "default": 2,
+      "default": 1,
       "control": { "type": "slider", "max": 15, "min": 0 }
     },
     {
@@ -43,7 +43,7 @@
       "displayName": "Bar Roundedness",
       "type": "number",
       "default": 30,
-      "control": { "type": "slider", "max": 50, "min": 15 }
+      "control": { "type": "slider", "max": 50, "min": 0 }
     }
   ],
   "childComponents": [
@@ -54,7 +54,7 @@
         "props": [
           {
             "name": "trackColorActive",
-            "displayName": "Enabled Track Color",
+            "displayName": "Enabled Bar Color",
             "type": "color",
             "default": "@primaryLight"
           },
@@ -90,7 +90,7 @@
         "props": [
           {
             "name": "trackColorInactive",
-            "displayName": "Disabled Track Color",
+            "displayName": "Disabled Bar Color",
             "type": "color",
             "default": "#e0e0e0"
           },
