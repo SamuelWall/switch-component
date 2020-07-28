@@ -2,7 +2,7 @@
   "name": "switch-component",
   "description": "Toggle true/false properties on and off.  Switch style is fully customizable.",
   "author": "Samuel Wolnerman, Ben Gilman",
-  "version": "1.0.4",
+  "version": "1.0.8",
   "displayName": "Switch",
   "license": "MIT",
   "main": "index.js",
@@ -24,8 +24,7 @@
         "manifest": "./src/components/SwitchComponent/manifest.json"
       }
     ],
-    "logo": "./logo.png",
-    "icon": "./thumbnail.png"
+    "logo": "./logo.png"
   },
   "devDependencies": {
     "@adalo/cli": "0.0.38",

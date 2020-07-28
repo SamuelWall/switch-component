@@ -21,10 +21,9 @@ class SwitchComponent extends Component{
 	}
 
 	render = () => {
-		console.log(this.props.defaultValue)
 		let val = this.state.currentVal
 		if(val == undefined)
-			val = true;
+			val = false;
 
 		return (
 				<Switch

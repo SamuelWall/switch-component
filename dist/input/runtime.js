@@ -1,3 +1,1 @@
-export {
-  SwitchComponent as SwitchComponent,
-} from '../../index.js'
+export {    SwitchComponent as SwitchComponent,  } from '../../index.js'
