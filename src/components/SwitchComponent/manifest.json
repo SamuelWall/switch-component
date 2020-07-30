@@ -1,7 +1,7 @@
 {
   "displayName": "Switch",
-  "defaultWidth": 20,
-  "defaultHeight": 15,
+  "defaultWidth": 25,
+  "defaultHeight": 12,
   "components": "./index.js",
   "icon": "./logo.png",
   "resizeY": true,
@@ -30,13 +30,6 @@
       "displayName": "Circle Border Width",
       "type": "number",
       "default": 0,
-      "control": { "type": "slider", "max": 15, "min": 0 }
-    },
-    {
-      "name": "switchMultiplyer",
-      "displayName": "Bar Length",
-      "type": "number",
-      "default": 1,
       "control": { "type": "slider", "max": 15, "min": 0 }
     },
     {
