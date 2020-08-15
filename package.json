@@ -2,7 +2,7 @@
   "name": "switch-component",
   "description": "Toggle true/false properties on and off.  Switch style is fully customizable.",
   "author": "Samuel Wolnerman, Ben Gilman",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "displayName": "Switch",
   "license": "MIT",
   "main": "index.js",
